@@ -1,0 +1,46 @@
+# Palm Plantation Mapping configuration
+paths:
+  downloads_dir: "downloads"                 # folder with Sentinel-2 zip files
+  stacked_dir: "outputs/stacked"             # where stacked GeoTIFFs are written
+  clipped_dir: "outputs/clipped"             # clipped rasters
+  output_dir: "outputs"                      # root outputs folder
+  aoi_path: "aoi.geojson"                    # AOI file (GeoJSON or Shapefile)
+  mosaic_output: "mosaic.tif"                # final mosaic path
+
+cdse:
+  username: "yourusername"
+  password: "password"
+
+imagery:
+  start_date: "2022-09-01"
+  end_date: "2022-11-30"
+  max_cloud_cover: 10
+
+
+bands:
+  - B02
+  - B03
+  - B04
+  - B08
+
+imagery:
+  start_date: "2025-03-01"
+  end_date: "2025-04-29"
+  max_cloud_cover: 5
+
+processing:
+  processing:
+  ndvi_range: [0.31, 0.48]
+  gndvi_range: [0.25, 0.39]
+  evi2_range: [0.5, 0.9]
+  morph_open_radius: 1
+  morph_close_radius: 2
+  min_area_ha: 0.5
+  max_area_ha: 100.0
+  glcm_window: 7
+  glcm_levels: 64
+ 
+
+output:
+  vector_format: "GPKG"    # "GPKG" or "SHP"
+  vector_name: "palm_polygons"
