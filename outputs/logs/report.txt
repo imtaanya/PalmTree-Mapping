@@ -1,0 +1,31 @@
+Palm Plantation Detection Report
+=============================================
+Generated: 2025-11-01 00:09:34
+
+INPUT SETTINGS
+--------------------
+AOI: aoi.geojson
+Bands used: B02, B03, B04, B08
+Date Range: 2025-03-01 → 2025-04-29
+
+RASTER SUMMARY
+--------------------
+NDVI.tif → {'CRS': 'EPSG:32644', 'Resolution': (10.0, 10.0), 'Extent': [486570.0, 1877640.0, 530870.0, 1903450.0]}
+GNDVI.tif → {'CRS': 'EPSG:32644', 'Resolution': (10.0, 10.0), 'Extent': [486570.0, 1877640.0, 530870.0, 1903450.0]}
+EVI2.tif → {'CRS': 'EPSG:32644', 'Resolution': (10.0, 10.0), 'Extent': [486570.0, 1877640.0, 530870.0, 1903450.0]}
+
+VECTOR SUMMARY
+--------------------
+
+PROCESSING PARAMETERS
+--------------------
+processing: None
+ndvi_range: [0.31, 0.48]
+gndvi_range: [0.25, 0.39]
+evi2_range: [0.5, 0.9]
+morph_open_radius: 1
+morph_close_radius: 2
+min_area_ha: 0.5
+max_area_ha: 100.0
+glcm_window: 7
+glcm_levels: 64
