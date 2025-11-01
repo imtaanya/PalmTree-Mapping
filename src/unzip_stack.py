@@ -1,6 +1,6 @@
 
 """
-unzip.py — Sentinel-2 L2A extraction and band stacking utility
+unzip_stack.py — Sentinel-2 L2A extraction and band stacking utility
 
 Description:
 ------------

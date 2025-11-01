@@ -1,7 +1,7 @@
 """
 polygonize_indices.py
 Create polygonized vector layers for NDVI, GNDVI, EVI2 ranges and combined intersection.
-Saves vectors in GPKG (or shapefile) and computes area in hectares.
+Saves vectors in GPKG and computes area in hectares.
 """
 
 import os

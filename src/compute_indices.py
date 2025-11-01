@@ -10,12 +10,6 @@ stacked Sentinel-2 raster (bands: B02, B03, B04, B08).
 It saves each index as an individual GeoTIFF file in the configured output
 directory.
 
-Configuration:
---------------
-Reads parameters from `config.yaml`, including:
-  - paths.output_dir        → directory for saving outputs
-  - paths.mosaic_output     → path to stacked/mosaicked raster input
-  - bands                   → order of bands (B02, B03, B04, B08)
 
 Outputs:
 --------

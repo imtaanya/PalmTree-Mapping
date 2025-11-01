@@ -95,7 +95,7 @@ def generate_report(config_path="config.yaml", output_dir="outputs"):
     with open(report_path, "w", encoding="utf-8") as f:
         f.write("\n".join(report_lines))
 
-    print(f" Report generated → {report_path}")
+    print(f" Report generated --> {report_path}")
     return report_path
 
 if __name__ == "__main__":

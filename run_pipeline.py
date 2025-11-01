@@ -16,8 +16,8 @@ from src.generate_report import generate_report
 
 
 def main():
-    print(" Step 1: Unzipping and stacking Sentinel-2 bands...")
-    unzip_run()
+    #print(" Step 1: Unzipping and stacking Sentinel-2 bands...")
+    #unzip_run()
 
     print("\n Step 2: Clipping rasters to AOI...")
     clip_run()

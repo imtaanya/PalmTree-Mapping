@@ -6,7 +6,7 @@ The workflow covers data download, preprocessing, vegetation index computation, 
 
 # Methodology
 
-1. Use Sentinel-2 L2A (Bottom of Atmosphere reflectance) imagery for analysis.
+1. Sentinel-2 L2A (Bottom of Atmosphere reflectance) imagery for analysis.
 
 2. Download scenes with cloud cover below 1%.
 
@@ -24,17 +24,35 @@ The workflow covers data download, preprocessing, vegetation index computation, 
 
    1. Sentinel-2 L2A – Copernicus Open Data License
 
-   2. AOI (GeoJSON) – User-provided Area of Interest
+   2. AOI (GeoJSON) – provided Area of Interest
+
+# Install Dependencies
+   pip install -r requirements.txt
+
+## Data Download
+
+To download Sentinel-2 imagery, use the `search_download_s2.py` script.
+
+This script:
+1. Searches for Sentinel-2 **L2A** products (these are atmospherically corrected and have less cloud cover).
+2. Displays the **top 10 matching products**.
+3. Prompts you to enter the number of the product you wish to download.
+
+### Example:
+
+   python search_download_s2.py
+
+
 # Run
-python run_pipeline.py
+   python run_pipeline.py
 
 # Expected Outputs
 
-   outputs/indices/ --> NDVI, GNDVI, EVI2 rasters
+   outputs/indices/ -- NDVI, GNDVI, EVI2 rasters
 
-   outputs/polygons/ --> Palm polygons (GeoPackage)
+   outputs/polygons/ -- Palm polygons (GeoPackage)
 
-   outputs/logs/ --> Processing summary report
+   outputs/logs/ -- Processing summary report
 
    Each polygon includes:
 

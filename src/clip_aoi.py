@@ -1,5 +1,5 @@
 """
-clip.py — Clip and mosaic Sentinel-2 stacked images to AOI
+clip_aoi.py — Clip and mosaic Sentinel-2 stacked images to AOI
 
 Description:
 ------------
@@ -7,14 +7,6 @@ This script performs the following steps:
   1. Reprojects an Area of Interest (AOI) GeoJSON to match Sentinel-2 CRS.
   2. Clips all stacked GeoTIFFs to that AOI extent.
   3. Creates a mosaic from the clipped rasters.
-
-Configuration:
---------------
-Reads parameters from `config.yaml`, including:
-  - paths.aoi_path        → AOI file path (GeoJSON or Shapefile)
-  - paths.output_dir      → directory with stacked GeoTIFFs
-  - paths.clipped_dir     → directory to save clipped rasters
-  - paths.mosaic_output   → output path for final mosaic
 
 Outputs:
 --------
